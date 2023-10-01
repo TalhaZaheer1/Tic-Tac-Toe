@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,700;6..12,800;6..12,900&family=Nunito:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>GAME</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">Tic-Tac-Toe</h1>
+        </header>
+        <section>
+
+            <div class="xo">
+                <button id="btn1" class="btn btn1">X</button><button id="btn2" class="btn">O</button>
+            </div>
+            <div class="game">
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+                <div class="gamebox"></div>
+            </div>
+            <div class="players">
+                <button id="pl1" class="pBtn">Player 1</button><button id="pl2" class="pBtn">Player 2</button>
+            </div>
+            <button class="pBtn lBtn nBtn">Restart</button>
+        </section>
+        <dialog id="myFavDialog">
+            <h1>YOU HAVE WON</h1>
+            <button class="pBtn dBtn nBtn">Start New Game</button>
+        </dialog>
+
+    </main>
+</body>
+
+</html>

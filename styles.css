@@ -1,0 +1,192 @@
+:root{
+    --size-xs:.5rem;
+    --size-sm:.75rem;
+    --size-md:1rem;
+    --size-lg:1.25rem;
+    --size-xl:1.75rem;
+    --size-xmd:2.3rem;
+    --size-xxl:2.95rem;
+    --size-xxxl:4.7rem;
+    --clr-yelo:rgb(233, 184, 36);
+    --clr-seaG:rgb(57, 199, 185);
+    --clr-redP:rgb(216, 63, 49);
+    --clr-orng:rgb(255, 166, 57);
+    --clr-bg:rgb(110, 110, 110);
+}
+*{
+    box-sizing: border-box;
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(71, 71, 71);
+}
+h1{
+    text-align: center;
+}
+#title{
+    color:var(--clr-orng);
+    font-size: var(--size-xxxl);
+    margin-bottom: 1rem;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+#myFavDialog{
+    background-color: var(--clr-orng);
+    border:none;
+    border-radius: 1rem;
+    width:30rem;
+    height: 12rem;
+    margin: 19rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+}
+
+
+
+.blur{
+    filter:blur(8px);
+}
+
+.xo{
+    background-color: var(--clr-bg);
+    width:17rem;
+    height: 5rem;
+    border-radius: 1rem;
+    padding:var(--size-xs);
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+}
+.btn{
+    width: 50%;
+    height: 100%;
+    background: inherit;
+    font-size: var(--size-xxl);
+    font-weight: 900;
+    border:none;
+    color:var(--clr-yelo);
+    transition: all .4s;    
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btn1{
+    background-color:var(--clr-yelo);
+    color: var(--clr-bg);
+}
+.game{
+    width:26rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    border-radius:1rem;
+    padding:var(--size-sm);
+}
+.gamebox{
+    height: 7rem;
+    background-color: var(--clr-bg);
+    border-radius: .75rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    transition: all .4s;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gamebox:active{
+    transform: translateY(10px) scale(.97);
+    box-shadow:0 0 0,inset 0 0px 10px var(--clr-bg),inset 0 0 10px rgba(255,255,255,.5);
+}
+.players{
+    display: flex;
+    gap:2rem;
+}
+.pBtn{
+    background: var(--clr-bg);
+    width:11rem;
+    height: 3rem;
+    border-radius: 1rem;
+    padding:var(--size-xs);
+    border: none;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    transition:all .4s;
+    font-size: var(--size-md);
+    font-weight: 600;
+    cursor: pointer;
+    outline:none;
+}
+.plturn{
+    transform: translateY(5px) scale(.97);
+    box-shadow:0 0 0,inset 0 0px 10px var(--clr-bg),inset 0 0 10px rgba(255,255,255,.5);
+}
+.lBtn{
+    width: 15rem;
+    height: 4rem;
+    font-size: var(--size-xmd);
+    color:var(--clr-seaG);
+}
+.lBtn:active{
+    transform: translateY(5px) scale(.97);
+    box-shadow:0 0 0,inset 0 0px 10px var(--clr-bg),inset 0 0 10px rgba(255,255,255,.5);
+}
+.para{
+    font-size: var(--size-xxxl);
+    font-weight: 700;
+    color:var(--clr-seaG);
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.letter{
+    width: 100%;
+    height: 100%;
+   object-fit: fill;
+   background-position: center;
+   background-repeat: no-repeat;
+   
+}
+
+.dBtn{
+    background: var(--clr-seaG);
+    color: var(--clr-orng);
+    font-size: var(--size-lg);
+    font-weight: 900;
+    width:15rem;
+}
+
+.dBtn:active{
+    transform: translateY(5px) scale(.97);
+    box-shadow:0 0 0,inset 0 0px 10px var(--clr-bg),inset 0 0 10px rgba(255,255,255,.5);
+}
+
+[data-svg = 'X']{
+    background-image: url(./assets/x-10366.svg);
+} 
+[data-svgb = 'x-b']{
+    background-image: url(https://0xabdulkhalid.github.io/tic-tac-toe/assets/icon-x-outline.svg);
+    background-size: 90px 90px;
+} 
+[data-svg = 'O']{
+    background-image: url(./assets/146009.svg);
+}
+[data-svgb = 'o-b']{
+    background-image: url(https://0xabdulkhalid.github.io/tic-tac-toe/assets/icon-o-outline.svg);
+    background-size: 90px 90px;
+} 
+.gameOver{
+    background-image: url(./assets/x-10366\(1\).svg);
+    background-color: rgb(57, 199, 185);
+}
+.gameOverY{
+    background-image: url(./assets/146009\(1\).svg);
+    background-color: rgb(233, 184, 36);
+    background-size: 90px 90px;
+
+}
